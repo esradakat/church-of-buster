@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html, body {
+ margin-left: 10%; /*to compensate for the space the sidebar takes up*/
+ margin-right: 5%;
+ padding-left: 2%;
+ padding-right: 2%;
+ border: 0px;
+ }
+ html, body {
+ color: #fff;
+ background: #000;
+ }
+ html, body, p, th, td, li, dd, dt {
+ font: 1em Arial, Helvetica, sans-serif;
+ }
+ h1, h2, h3, h4, h5, h6 {
+font-family: 'Abril Fatface', cursive;
+ }
+ #centered 
+ { text-align: center;}
+ 
+ h1 { font-size: 2em; 
+      text-align: center;}
+ h2 { font-size: 1.5em; }
+ h3 { font-size: 1.2em ; }
+ h4 { font-size: 1.0em; }
+ h5 { font-size: 0.9em; }
+ h6 { font-size: 0.8em; }
+ a:link { color: #00f; }
+a:visited { color: #009; }
+a:hover { color: #06f; }
+a:active { color: #0cf; }
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 13%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #115; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Abril Fatface', cursive;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 10px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
